@@ -367,11 +367,14 @@
       </dependency>
     
     <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet -->
+	<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
 	<dependency>
-	    <groupId>javax.servlet.jsp</groupId>
-	    <artifactId>javax.servlet.jsp-api</artifactId>
-	    <version>2.3.1</version>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>servlet-api</artifactId>
+	    <version>2.3</version>
+	    <scope>provided</scope>
 	</dependency>
+
 
     <dependency>
       <groupId>org.aspectj</groupId>
