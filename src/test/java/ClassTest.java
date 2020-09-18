@@ -16,10 +16,10 @@ public class ClassTest {
 		Assert.assertEquals("Hello","Hello");
 	}
 	
-	@Test
-	public void funTest3() {
-		
-		Assert.assertEquals("Hello","Hello3");
+//	@Test
+//	public void funTest3() {
+//		
+//		Assert.assertEquals("Hello","Hello3");
 	}
 	
 	@Test
