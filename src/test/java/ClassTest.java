@@ -20,7 +20,7 @@ public class ClassTest {
 //	public void funTest3() {
 //		
 //		Assert.assertEquals("Hello","Hello3");
-	}
+//	}
 	
 	@Test
 	public void funTest4() {
