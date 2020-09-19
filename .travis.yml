@@ -12,4 +12,4 @@ after_success:
 - bash <(curl -s https://codecov.io/bash)
 - ls
 - ls target
-- mvn heroku:deploy
+- mvn heroku:deploy-war
