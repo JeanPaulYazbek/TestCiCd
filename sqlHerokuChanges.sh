@@ -5,7 +5,7 @@ HIBERNATEXML=src/main/resources/hibernate.cfg.xml
 
 # Modify enitty xmls
 for i in src/main/resources/com/howtodoinjava/entity/*.xml; do
-	sed -i ''  "s/schema=\".*\"/schema=\"${HEROKU_USER}\"/g" $i
+	sed -i "s/schema=\".*\"/schema=\"${HEROKU_USER}\"/g" $i
 done
 
 
@@ -20,7 +20,7 @@ jdbc.password=${HEROKU_DB_PASSWORD} \n" >> ${JDBCPROP}
 
 
 # Modify hibernate.cfg.xml 
-sed -i ''  's/<property name="hibernate.connection.url">.*<\/property>/<property name="hibernate.connection.url">${JDBC_DATABASE_URL}<\/property>/' ${HIBERNATEXML}
-sed -i ''  "s/<property name=\"hibernate.connection.username\">.*<\/property>/<property name=\"hibernate.connection.username\">${HEROKU_USER}<\/property>/" ${HIBERNATEXML}
-sed -i ''  "s/<property name=\"hibernate.connection.password\">.*<\/property>/<property name=\"hibernate.connection.password\">${HEROKU_DB_PASSWORD}<\/property>/" ${HIBERNATEXML}
+sed -i 's/<property name="hibernate.connection.url">.*<\/property>/<property name="hibernate.connection.url">${JDBC_DATABASE_URL}<\/property>/' ${HIBERNATEXML}
+sed -i "s/<property name=\"hibernate.connection.username\">.*<\/property>/<property name=\"hibernate.connection.username\">${HEROKU_USER}<\/property>/" ${HIBERNATEXML}
+sed -i "s/<property name=\"hibernate.connection.password\">.*<\/property>/<property name=\"hibernate.connection.password\">${HEROKU_DB_PASSWORD}<\/property>/" ${HIBERNATEXML}
 
