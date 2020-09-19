@@ -27,7 +27,7 @@
     <netbeans.hint.deploy.server>Tomcat</netbeans.hint.deploy.server>
     <jackson.version>2.6.3</jackson.version>
     <start-class>com.howtodoinjava.lambdacalculo.Main</start-class>
-    <full-artifact-name>target/${project.artifactId}-${project.version}.jar</full-artifact-name>
+    <full-artifact-name>target/${project.artifactId}.war</full-artifact-name>
   </properties>
   <dependencies>
 
