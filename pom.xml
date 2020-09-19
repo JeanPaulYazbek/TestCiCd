@@ -483,7 +483,7 @@
 		      <artifactId>heroku-maven-plugin</artifactId>
 		      	<version>2.0.11</version>
 		      		<configuration>
-		       		 <appName>CalcLogic</appName>
+		       		 <appName>herokucdtest</appName>
 		        	<processTypes>
 		          	<web>java $JAVA_OPTS -war -Dserver.port=$PORT ${full-artifact-name}</web>
 		        	</processTypes>
