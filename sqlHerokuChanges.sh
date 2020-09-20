@@ -10,12 +10,12 @@ done
 
 
 # Modify jdbc.properties
-printf 'jdbc.driverClassName=org.postgresql.Driver 
-jdbc.dialect=org.hibernate.dialect.PostgreSQLDialect 
-jdbc.databaseurl=${JDBC_DATABASE_URL} \n' > ${JDBCPROP}
+printf 'jdbc.driverClassName=org.postgresql.Driver
+jdbc.dialect=org.hibernate.dialect.PostgreSQLDialect
+jdbc.databaseurl=${JDBC_DATABASE_URL}\n' > ${JDBCPROP}
 
-printf "jdbc.username=${HEROKU_USER} \n\
-jdbc.password=${HEROKU_DB_PASSWORD} \n" >> ${JDBCPROP}
+printf "jdbc.username=${HEROKU_USER}\n\
+jdbc.password=${HEROKU_DB_PASSWORD}\n" >> ${JDBCPROP}
 
 
 
