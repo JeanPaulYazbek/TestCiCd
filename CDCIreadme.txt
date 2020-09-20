@@ -95,6 +95,10 @@
 	4.6) correr el siguiente comando en  heroku cli 
 		heroku buildpacks:set heroku/jvm --app superApp
 	4.7) montar la base de datos en la base de datos como se muestra en HerokuBuildreadme
-	4.8) agregar el siguiente comando en travis debajo de - bash <(curl -s https://codecov.io/bash)
+	4.8) agregar el siguiente comando en .travis.yml debajo de - bash <(curl -s https://codecov.io/bash)
 		- mvn heroku:deploy-war
-
+	4.9) modifica el siguiente script sqlHerokuChanges.sh  debe estar en la misma carpeta que src, en las dos 
+		siguientes lineas poner el usuario y password de la base de datos de heroku
+			HEROKU_USER=zmywvjjdgdblxr
+			HEROKU_DB_PASSWORD=427841cddb5db15c51d65ecd9f777edd8d8038abd360cb251a94e28f4ee6bb00
+	4.10) haz push de todos estos cambios y a partir de ahora el deploy a heroku deberia estar completo

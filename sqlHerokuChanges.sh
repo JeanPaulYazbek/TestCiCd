@@ -24,8 +24,8 @@ sed -i 's/<property name="hibernate.connection.url">.*<\/property>/<property nam
 sed -i "s/<property name=\"hibernate.connection.username\">.*<\/property>/<property name=\"hibernate.connection.username\">${HEROKU_USER}<\/property>/" ${HIBERNATEXML}
 sed -i "s/<property name=\"hibernate.connection.password\">.*<\/property>/<property name=\"hibernate.connection.password\">${HEROKU_DB_PASSWORD}<\/property>/" ${HIBERNATEXML}
 
-echo "CONFIRMING"
-echo "jDBC: "
+echo "CONFIRMING RESULTS: "
+echo "JDBC.PROPERTIES: "
 cat src/main/webapp/WEB-INF/jdbc.properties
-echo "HIBERNATE: "
+echo "HIBERNATE CONFIGURATON FILE: "
 cat src/main/resources/hibernate.cfg.xml
