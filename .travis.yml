@@ -5,11 +5,12 @@ language: java
 jdk:
 - openjdk8
 
+#Clean maven and change database metadata on certain files to match heroku's
 before_install:
 - mvn clean
+- bash sqlHerokuChanges.sh
+
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
-- ls
-- ls target
 - mvn heroku:deploy-war
